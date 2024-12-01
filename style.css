@@ -31,14 +31,33 @@
     height: 90vh;
     background-image: url(assets/Polvo.png);
     background-repeat: no-repeat;
-    background-size: 30rem;
+    background-size: 35rem;
     background-position: right;
     background-blend-mode: overlay;
     background-color: var(--diamond-blue);
     font-family: var(--poppins);
     color: var(--indigo-dye);
-    box-shadow: inset -10rem 0rem 12rem rgba(245, 245, 245, 0.2),
-        inset 10rem 0rem 12rem rgba(245, 245, 245, 0.2);
+    padding: 0;
+}
+
+#init_page_left_shadow {
+    position: absolute;
+    top: -15rem;
+    left: 0rem;
+    width: 30rem;
+    user-select: none;
+
+}
+
+#init_page_right_shadow {
+    position: absolute;
+    width: 50rem;
+    transform: rotate(180deg);
+    opacity: 0.8;
+    top: -10rem;
+    right: -15rem;
+    user-select: none;
+
 }
 
 .content_container {
@@ -48,13 +67,15 @@
     font-family: var(--baloo);
     font-weight: normal;
     align-items: center;
+    gap: 1rem;
     /* Centraliza os itens na horizontal */
     justify-content: center;
     /* Centraliza os itens na vertical */
-    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-button {
+.content_container button {
     display: flex;
     font-size: 2rem;
     background-color: var(--indigo-dye);
@@ -69,13 +90,13 @@ button {
     align-items: center;
     font-family: var(--baloo);
     font-weight: bold;
-    gap: 0.rem;
+    gap: 0.5rem;
     box-shadow: 0rem 0rem 2rem var(--indigo-dye);
 
 }
 
 
-button:hover {
+.content_container button:hover {
     box-shadow: 0rem 0rem 2rem var(--uranium-blue);
 }
 
@@ -113,15 +134,33 @@ header {
 
 .logotipo_02 {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     padding-left: 2rem;
     padding-right: 70px;
+}
+
+.logotipo_02 h1 {
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--diamond-blue);
+}
+
+.logotipo_02 strong {
+    font-weight: bold;
+    color: var(--indigo-dye);
+}
+
+.logotipo_02 img {
+    width: 20%;
 }
 
 .video_page_container {
     height: 35rem;
     width: 100%;
-    background-color: #D8F2FE;
+    background-color: var(--light-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,4 +173,87 @@ header {
     border-radius: 2rem;
     outline: none;
     display: block;
+}
+
+.ending_page {
+    width: 100%;
+    height: 40rem;
+    background-color: var(--diamond-blue);
+    justify-content: space-around;
+    display: flex;
+    font-family: var(--poppins);
+    font-size: 2rem;
+    color: var(--white-smoke);
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+.left-shadows {
+    position: absolute;
+    left: 0rem;
+    bottom: -120rem;
+    width: 30rem;
+}
+
+.ending_page button {
+    display: flex;
+    font-size: 1.7rem;
+    background-color: var(--indigo-dye);
+    right: 2rem;
+    width: 25rem;
+    height: 10rem;
+    color: var(--white-smoke);
+    border-radius: 25rem;
+    cursor: pointer;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--baloo);
+    font-weight: bold;
+    gap: 0.5rem;
+    margin-top: 0.175rem;
+}
+
+.funcionalidades_container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.funcionalidades_container div {
+    width: 12rem;
+    height: 17rem;
+    border-radius: 40px;
+    background-color: var(--uranium-blue);
+}
+
+.funcionalidade_1 {
+    margin-right: 15rem;
+}
+
+.funcionalidade_2 {
+    margin-left: 8rem;
+}
+
+.funcionalidade_3 {
+    margin-right: 20rem;
+}
+
+.ending_page h1 {
+    font-weight: normal;
+    margin-top: 8rem;
+}
+
+.ending_page strong {
+    font-weight: bold;
+}
+
+.mockup_page {
+    width: 100%;
+    height: 50rem;
+    background-color: var(--diamond-blue);
 }

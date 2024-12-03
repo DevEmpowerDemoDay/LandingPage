@@ -48,7 +48,7 @@
     font-family: var(--baloo);
     line-height: 1.3;
     padding-left: 5%;
-    padding-top: 7rem;
+    padding-top: 13rem;
     padding-bottom: 5%;
     gap: 2rem;
     user-select: none;
@@ -82,47 +82,50 @@
 
 .content_container h1 {
     font-size: 1.5rem;
+    overflow: hidden;
 }
 
 .content_container p {
     font-size: 3rem;
+    overflow: hidden;
 }
-
-
-
-
 
 .video_page_container {
     height: 90vh;
     width: 100%;
-    background-color: var(--light-blue);
-
+    background: url(assets/background_asset.svg) no-repeat right;
+    background-size: 80rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .video_player {
-    width: 100%;
-    max-width: 640px;
-    height: auto;
+    width: 50vw;
+    height: 60vh;
     border-radius: 2rem;
     outline: none;
     display: block;
-    box-shadow: 0px 0px 8rem var(--indigo-dye);
+    box-shadow: 0px 0px 2rem var(--indigo-dye);
+    border: 0.4rem solid var(--uranium-blue);
+
 }
 
 .ending_page {
     width: 100%;
     height: 100vh;
     background-color: var(--diamond-blue);
-    justify-content: space-around;
+    justify-content: center; /* Alinha os itens ao centro no eixo horizontal */
+    align-items: center;    /* Alinha os itens ao centro no eixo vertical */
     display: flex;
     font-family: var(--poppins);
     font-size: 2rem;
     color: var(--white-smoke);
-    text-align: center;
+    text-align: center; /* Alinha o conteúdo de texto dentro do h1 ao centro */
+    gap: 20vw;
 }
+
+
 
 
 .left-shadows {
@@ -134,11 +137,11 @@
 
 #end_button {
     display: flex;
-    font-size: 1.7rem;
+    font-size: 2.7rem;
     background-color: var(--indigo-dye);
-    padding: 1rem;
+    padding: 1.5rem;
     color: var(--white-smoke);
-    border-radius: 25rem;
+    border-radius: 2rem;
     cursor: pointer;
     border: none;
     justify-content: center;
@@ -153,17 +156,19 @@
     align-items: center;
     flex-direction: column;
     gap: 1.3rem;
-    margin-bottom: 10%;
 }
 
 
 .ending_page h1 {
     font-weight: normal;
-    margin-top: 8rem;
+    font-size: 4.5rem;
+    text-align: center;
+    overflow: hidden;
 }
 
 .ending_page strong {
     font-weight: bold;
+    overflow: hidden;
 }
 
 .mockup_page {
@@ -216,15 +221,19 @@
 
 .next_asset {
     cursor: pointer;
+    filter: brightness(200%);
 }
 
 .box_container {
     display: flex;
     flex-direction: column;
+    background-color: black;
+    height: 60vh;
+    width: 100%;
     gap: 1.2rem;
 }
 
 .logo {
     filter: brightness(2) contrast(1.5);
-
+    margin-bottom: 2rem;
 }

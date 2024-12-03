@@ -2,7 +2,7 @@ const btn = document.getElementById("scroll_button")
 
 
 btn.addEventListener("click", () => {
-    const end_page = document.querySelector(".ending_page")
+    const target = document.querySelector(".video_page_container")
 
-    end_page.scrollIntoView({behavior: "smooth"})
+    target.scrollIntoView({behavior: "smooth"})
 })

@@ -89,6 +89,13 @@
     overflow: hidden;
 }
 
+.logo {
+    filter: brightness(2) contrast(1.5);
+    width: 10em;
+    margin-bottom: 0.5em;
+}
+
+
 .video_page_container {
     height: 90vh;
     width: 100%;
@@ -125,21 +132,30 @@
     gap: 10vw;
 }
 
-
-
-
+.ending_page_content {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+}
 
 .ending_page h1 {
     font-weight: normal;
     font-size: 1.5em;
     text-align: center;
     overflow: hidden;
-    text-shadow: 0px 0px 0.115em var(--white-smoke);
-
+    text-shadow: 0px 0px 0.115em var(--white-smoke); 
 }
 
-.ending_page strong {
-    font-weight: bold;
+.offers_container {
+    width: 50vw;
+    height: 100vh;
+    justify-content: space-between;
+    display: flex;
+    font-size: 0.575em;
+    align-items: end;
+    flex-direction: column;
+    padding: 4em 2em;
 }
 
 .mockup_page {
@@ -160,6 +176,7 @@
     color: var(--white-smoke);
     font-family: var(--poppins);
     font-size: 3em;
+    overflow: hidden;
 }
 
 .text_div {
@@ -190,24 +207,7 @@
     filter: brightness(200%);
 }
 
-.box_container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 40vw;
-    gap: 1.2em;
-}
 
-.box_container img {
-    box-shadow:  10px 10px 2rem var(--uranium-blue);
-}
-
-.logo {
-    filter: brightness(2) contrast(1.5);
-    width: 10em;
-    margin-bottom: 0.5em;
-}
 
 .team_page {
     height: 100vh;
@@ -218,29 +218,3 @@
 }
 
 
-.principal_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.principal_container img {
-    width: 10em;
-    height: 10em;
-}
-
-.text_container {
-    width: 40vw;
-    color: var(--bright-blue);
-}
-
-.text_container p {
-    font-size: 2em;
-}
-
-.text_container h1 {
-    font-size: 4em;
-}

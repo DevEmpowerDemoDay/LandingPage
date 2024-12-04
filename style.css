@@ -48,20 +48,21 @@
     font-family: var(--baloo);
     line-height: 1.3;
     padding-left: 5%;
-    padding-top: 13rem;
+    padding-top: 5em;
     padding-bottom: 5%;
-    gap: 2rem;
+    gap: 2em;
     user-select: none;
+    overflow: hidden;
 }
 
 .content_container button {
     display: flex;
-    font-size: 2rem;
+    font-size: 2em;
     background-color: var(--indigo-dye);
-    width: 26rem;
-    height: 5rem;
+    width: 13em;
+    height: 2.5em;
     color: var(--white-smoke);
-    border-radius: 25rem;
+    border-radius: 25em;
     border: none;
     cursor: pointer;
     transition: 0.5s;
@@ -69,24 +70,22 @@
     align-items: center;
     font-family: var(--baloo);
     font-weight: bold;
-    gap: 0.5rem;
-    box-shadow: 0rem 0rem 2rem var(--indigo-dye);
+    gap: 0.5em;
+    box-shadow: 0em 0em 2em var(--indigo-dye);
 }
 
 
 .content_container button:hover {
-    box-shadow: 0rem 0rem 2rem var(--uranium-blue);
+    box-shadow: 0em 0em 2em var(--uranium-blue);
 }
 
-
-
 .content_container h1 {
-    font-size: 1.5rem;
+    font-size: 1.4em;
     overflow: hidden;
 }
 
 .content_container p {
-    font-size: 3rem;
+    font-size: 2.5em;
     overflow: hidden;
 }
 
@@ -94,7 +93,8 @@
     height: 90vh;
     width: 100%;
     background: url(assets/background_asset.svg) no-repeat right;
-    background-size: 80rem;
+    background-color: var(--bright-blue);
+    background-size: 80em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,114 +103,80 @@
 .video_player {
     width: 50vw;
     height: 60vh;
-    border-radius: 2rem;
+    border-radius: 2em;
     outline: none;
     display: block;
-    box-shadow: 0px 0px 2rem var(--indigo-dye);
-    border: 0.4rem solid var(--uranium-blue);
+    box-shadow: 0px 0px 2em var(--indigo-dye);
+    border: 0.4em solid var(--uranium-blue);
 
 }
 
 .ending_page {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: var(--diamond-blue);
     justify-content: center; /* Alinha os itens ao centro no eixo horizontal */
     align-items: center;    /* Alinha os itens ao centro no eixo vertical */
     display: flex;
     font-family: var(--poppins);
-    font-size: 2rem;
+    font-size: 2em;
     color: var(--white-smoke);
     text-align: center; /* Alinha o conteúdo de texto dentro do h1 ao centro */
-    gap: 20vw;
+    gap: 10vw;
 }
 
 
 
-
-.left-shadows {
-    position: absolute;
-    left: 0rem;
-    bottom: -120rem;
-    width: 30rem;
-}
-
-#end_button {
-    display: flex;
-    font-size: 2.7rem;
-    background-color: var(--indigo-dye);
-    padding: 1.5rem;
-    color: var(--white-smoke);
-    border-radius: 2rem;
-    cursor: pointer;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--baloo);
-    font-weight: bold;
-}
-
-.funcionalidades_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1.3rem;
-}
 
 
 .ending_page h1 {
     font-weight: normal;
-    font-size: 4.5rem;
+    font-size: 1.5em;
     text-align: center;
     overflow: hidden;
+    text-shadow: 0px 0px 0.115em var(--white-smoke);
+
 }
 
 .ending_page strong {
     font-weight: bold;
-    overflow: hidden;
 }
 
 .mockup_page {
-    width: 100%;
-    height: 50rem;
+    width: 100vw;
+    height: 120vh;
     background-color: var(--diamond-blue);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1em;
 }
 
 .mockup_page h1 {
     font-weight: normal;
+    width: 100%;
+    text-align: center;
     color: var(--white-smoke);
     font-family: var(--poppins);
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .text_div {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-family: var(--baloo);
-    background-color: var(--uranium-blue);
+    background-color: transparent;
     text-align: center;
-    width: 30rem;
-    color: var(--indigo-dye);
+    width: 25em;
+    color: var(--uranium-blue);
+    box-shadow: 0px 0px 0.365em;
+    border: 0.3em solid var(--uranium-blue);
     font-weight: bold;
-    height: 4rem;
-    border-radius: 1.5rem;
-}
-
-
-#ending_page_shadow {
-    position: absolute;
-    right: 0rem;
-    rotate: 180deg;
-    bottom: -95rem;
-    width: 30rem;
+    height: 4em;
+    border-radius: 1.5em;
 }
 
 .mockup_container {
@@ -226,14 +192,55 @@
 
 .box_container {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    background-color: black;
-    height: 60vh;
-    width: 100%;
-    gap: 1.2rem;
+    height: 100vh;
+    width: 40vw;
+    gap: 1.2em;
+}
+
+.box_container img {
+    box-shadow:  10px 10px 2rem var(--uranium-blue);
 }
 
 .logo {
     filter: brightness(2) contrast(1.5);
-    margin-bottom: 2rem;
+    width: 10em;
+    margin-bottom: 0.5em;
+}
+
+.team_page {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--uranium-blue);
+    background: url(assets/background_asset3.png) no-repeat;
+    background-size: cover;
+}
+
+
+.principal_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.principal_container img {
+    width: 10em;
+    height: 10em;
+}
+
+.text_container {
+    width: 40vw;
+    color: var(--bright-blue);
+}
+
+.text_container p {
+    font-size: 2em;
+}
+
+.text_container h1 {
+    font-size: 4em;
 }

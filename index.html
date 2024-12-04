@@ -6,50 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevEmpower</title>
     <link rel="icon" href="assets/Logo_DevEmpower.png">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="background-color: #005377;">
 
     <section class="init_page_container">
         <div class="content_container">
             <div>
-                <img class="logo" src="assets/Logo_DevEmpower.png">
+                <img class="logo" src="assets/Logo_Branco.svg">
                 <h1>Seja bem-vindo a nossa Plataforma.</h1>
-                <p><strong>Você está preparado(a) </strong><br>para o <strong>mercado de<br>Tecnologia ?</strong></p>
+                <p style="font-weight: bold; width: 15em;">Você está preparado(a)<br>para o mercado de<br>Tecnologia ?
+                </p>
             </div>
             <button id="scroll_button">Programe o futuro!<img src="assets/seta.png"></button>
         </div>
     </section>
     <section class="video_page_container">
-        <iframe class="video_player" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class="video_player" src="https://www.youtube.com/embed/-xWf2YwPTu0" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
     </section>
     <section class="ending_page">
-        <h1>Buscando <strong>aprimorar<br>suas soft-skills e se<br>destacar nas<br>entrevistas?</strong></h1>
-        <div class="funcionalidades_container">
-            <button id="end_button">Nossas funcionalidades <img src="assets/seta.png"></button>
-            <div class="box_container">
-                <!-- <div style="width: 1rem; height: 12rem; background-color: #AEDFF7; border-radius: 1rem; margin-left: 9rem;"></div>
-                <div style="width: 1rem; height: 12rem; background-color: #AEDFF7; border-radius: 1rem; margin-right: 8rem;"></div>
-                <div style="width: 1rem; height: 12rem; background-color: #AEDFF7; border-radius: 1rem; margin-left: 8rem;"></div> -->
+        <div class="ending_page_content">
+            <h1>Buscando <strong>aprimorar<br>suas soft-skills e se<br>destacar nas<br>entrevistas?</strong></h1>
+        </div>
+    </section>
+    <section class="mockup_page">
+        <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;"
+            class="mockup_page_content">
+            <h1>Conheça nosso <strong>Aplicativo Mobile</strong></h1>
+            <div class="text_div">Na palma da sua mão, de Jovem para Jovem.</div>
+            <div class="mockup_container" style="overflow: hidden;">
+                <img class="next_asset" src="assets/next_asset.png">
+                <img src="assets/mockup_comunidade.png">
+                <img src="assets/mockup_splash.png">
+                <img src="assets/mockup_home.png">
+                <img style="rotate: 180deg;" class="next_asset" src="assets/next_asset.png">
             </div>
         </div>
-        <!-- <img class="left-shadows" src="assets/shadow.png">
-        <img id="ending_page_shadow" src="assets/shadow2.png"> -->
     </section>
-
-    <section class="mockup_page">
-        <h1>Conheça nosso <strong>Aplicativo Mobile</strong></h1>
-        <div class="text_div">Na palma da sua mão, de Jovem para Jovem.</div>
-        <div class="mockup_container">
-            <img class="next_asset" src="assets/next_asset.png">
-            <img src="assets/mockup_comunidade.png">
-            <img src="assets/mockup_splash.png">
-            <img src="assets/mockup_home.png">
-            <img style="rotate: 180deg;" class="next_asset" src="assets/next_asset.png">
-        </div>
+    <section class="team_page">
     </section>
     <script src="index.js"></script>
+    <script>
+        ScrollReveal().reveal('.ending_page_content', {
+            origin: 'bottom',
+            distance: '90%',
+            duration: 1500,
+            delay: 100
+
+        });
+        ScrollReveal().reveal('.video_player', {
+            origin: 'bottom',
+            distance: "90%",
+            duration: 1500,
+            delay: 200
+
+        });
+        ScrollReveal().reveal('.mockup_page_content', {
+            origin: 'bottom',
+            distance: "90%",
+            duration: 1500,
+            delay: 300
+
+        });
+
+    </script>
 </body>
 
 </html>

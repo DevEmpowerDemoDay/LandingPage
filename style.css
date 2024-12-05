@@ -207,14 +207,24 @@
     filter: brightness(200%);
 }
 
-
-
 .team_page {
     height: 100vh;
     width: 100vw;
     background-color: var(--uranium-blue);
     background: url(assets/background_asset3.png) no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.team_page h1 {
+    font-size: 2em;
+    color: var(--indigo-dye);
+    font-family: var(--baloo);
+    font-weight: bold;
 }
 
 

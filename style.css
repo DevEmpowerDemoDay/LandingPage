@@ -171,6 +171,7 @@ section {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 2rem;
 }
 
 .ods_text_container {
@@ -185,7 +186,6 @@ section {
     font-family: var(--baloo);
     padding: 1.5rem;
     border-radius: 2rem;
-    margin-right: 3rem;
 }
 
 .ods_text_container h1 {

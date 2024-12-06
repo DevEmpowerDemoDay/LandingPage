@@ -1,4 +1,4 @@
-
+const btn = document.querySelector("#scroll_button")
 
 const mockups = document.querySelectorAll(".mockup_cellphone");
 

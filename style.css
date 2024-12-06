@@ -143,11 +143,15 @@ section {
 }
 
 .mission_page {
-    background-color: #AEDFF7;
     display: flex;
     justify-content: start;
+    flex-direction: row;
     align-items: start;
     box-shadow: inset 0 0 8rem rgba(0, 0, 0, 0.3);
+    background-color: var(--uranium-blue);
+    background-image: url(assets/background_ods.svg);
+    background-repeat: no-repeat;
+    background-position: 35vw center;
 }
 
 .vision_container {
@@ -160,6 +164,41 @@ section {
     gap: 2rem;
     align-items: center;
 }
+
+.ods_container {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ods_text_container {
+    width: 25rem;
+    height: 15rem;
+    background-color: var(--second-blue);
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    color: var(--white-smoke);
+    font-family: var(--baloo);
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin-right: 3rem;
+}
+
+.ods_text_container h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.ods_text_container p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 
 .item {
     display: flex;
@@ -296,6 +335,7 @@ section {
     border-radius: 1.5rem;
     color: var(--uranium-blue);
     font-family: var(--baloo);
+    box-shadow: 0 0 0.8rem var(--uranium-blue);
 }
 
 /* Team Section */
@@ -323,10 +363,16 @@ section {
     justify-content: center;
     width: 80vw;
     padding-bottom: 5%;
+    transition: 0.5s;
 }
 
 .photos img {
     width: 15rem;
+}
+
+.photos img:hover {
+    scale: 1.1;
+    transition: 0.5s;
 }
 
 

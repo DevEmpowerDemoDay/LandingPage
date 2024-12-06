@@ -137,6 +137,7 @@ section {
 .ending_page h1 {
     font-size: 3rem;
     font-family: var(--poppins);
+    padding-top: 4rem;
 }
 
 .offers_container {

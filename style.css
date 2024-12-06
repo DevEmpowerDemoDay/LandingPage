@@ -161,6 +161,12 @@ section {
     align-items: center;
 }
 
+.item {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
 .item_container {
     width: 25rem;
     height: 10rem;

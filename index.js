@@ -1,16 +1,18 @@
-const btn = document.getElementById("scroll_button")
-const mockup = document.querySelector(".mockup_cellphone")
 
+
+const mockups = document.querySelectorAll(".mockup_cellphone");
+
+mockups.forEach(mockup => {
+    mockup.addEventListener("click", (event) => {
+        // Remove a classe 'active' de todos os elementos
+        mockups.forEach(item => item.classList.remove("active"));
+        // Adiciona a classe 'active' ao elemento clicado
+        event.target.classList.toggle("active");
+    });
+});
 
 btn.addEventListener("click", () => {
     const target = document.querySelector(".video_page_container")
 
-    target.scrollIntoView({behavior: "smooth"})
-})
-
-
-const back_to = document.getElementById("back_to")
-
-back_to.addEventListener("click", () => {
-    mockup.src = "assets/03.png"
+    target.scrollIntoView({ behavior: "smooth" })
 })

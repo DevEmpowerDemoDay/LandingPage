@@ -129,9 +129,13 @@ section {
     background-size: cover;
 }
 
+.ending_page_content {
+    display: flex;
+    gap: 6rem;
+}
+
 .ending_page h1 {
     font-size: 3rem;
-    margin-bottom: 15%;
     font-family: var(--poppins);
 }
 
@@ -139,14 +143,13 @@ section {
     display: flex;
     flex-wrap: no-wrap;
     justify-content: center;
-    gap: 4rem;
-    margin-top: 2rem;
+    gap: 2rem;
 }
 
 .offers_container > div {
     flex-basis: calc(33.333% - 1rem);
     min-width: 250px;
-    height: 250px;
+    height: 15rem;
     width: 100%;
     background-color: transparent;
     border: var(--uranium-blue) 4px solid;
@@ -165,8 +168,8 @@ section {
     align-items: center;
     color: var(--uranium-blue);
     justify-content: center;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.3rem;
+    border-top-right-radius: 1.3rem;
     background-color: var(--indigo-dye);
     border-bottom: 4px solid var(--uranium-blue);
 }
@@ -178,10 +181,14 @@ section {
     background-size: cover;
 }
 
+.mockup_page_content {
+    display: flex;
+    gap: 2rem;
+}
+
 .mockup_page_content h1 {
     color: var(--white-smoke);
     font-size: 3rem;
-    margin-top: 20rem;
     text-shadow: 0px 0px 2rem var(--white-smoke);
 
 }
@@ -211,12 +218,6 @@ section {
     cursor: pointer;
 }
 
-/* .mockup_container img {
-    max-width: 200px;
-    margin: 0.5rem;
-} */
-
-
 .text_div {
     display: inline-block;
     padding: 1rem;
@@ -224,7 +225,6 @@ section {
     border-radius: 1.5rem;
     color: var(--uranium-blue);
     font-family: var(--baloo);
-    margin-bottom: 1rem;
 }
 
 /* Team Section */
